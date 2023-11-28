@@ -148,3 +148,35 @@ img{
     background-color: aliceblue;
     right: 0;
 }
+
+
+.footer{
+    min-height: 100px;
+    background-color:rgb(16, 15, 15);
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    line-height: 1.5rem;
+    font-size: 12px;
+    padding-top: 12px;
+    color: aliceblue;
+}
+
+.info{
+
+    flex: 0 0 50%;
+    
+    text-align: left;
+    
+}
+
+.social{
+    flex: 0 0 50%;
+    text-align: right;
+}
+
+.social i{
+    padding: 3px;
+}
