@@ -1,3 +1,6 @@
+
+/* reset */
+
 *{
     margin: 0;
     padding: 0;
@@ -23,7 +26,14 @@ a{
     color: aliceblue;
 }
 
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
 /* header */
+
 
 .header{
     min-height: 80px;
@@ -32,7 +42,12 @@ a{
     justify-content: center;
     position: sticky;
     top: 0;
+  
     z-index: 1;
+}
+
+.header-shadow{
+    box-shadow: -6px -6px 40px black;
 }
 
 .genere{
@@ -69,10 +84,6 @@ a{
     padding: 5px;
 }
 
-.container{
-    width: 1200px;
-    margin: 0 auto;
-}
 
 /* main */
 
@@ -108,9 +119,11 @@ img{
 
 .hover-img{
     width:fit-content;
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
+    opacity: 0.0;
+    transition: all ease-in-out 300ms
  
 
 }
@@ -139,17 +152,6 @@ img{
     text-decoration: line-through;
     color: black;
 }
-
-/* Hover */
-
-
-.card:hover .hover-img{
-    display: block;
-
-}
-
-
-
 .sconto{
     position: absolute;
     bottom: 50px;
@@ -176,6 +178,22 @@ img{
     right: 0;
 }
 
+/* Hover */
+
+
+.card:hover .hover-img{
+    opacity: 1;
+    transition: all ease-in-out 300ms
+
+}
+
+.cuore:hover p{
+    color: red;
+}
+
+
+
+/* footer */
 
 .footer{
     min-height: 100px;
